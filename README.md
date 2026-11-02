@@ -1,6 +1,6 @@
 # Agent Skills 集合
 
-本仓库收集了 **46** 个 Agent Skill，用于扩展 AI 代理的各种能力，涵盖工程开发、设计、文档处理、生产力等多个领域。
+本仓库收集了 **48** 个 Agent Skill，用于扩展 AI 代理的各种能力，涵盖工程开发、设计、文档处理、生产力等多个领域。
 
 ## 什么是 Agent Skills？
 
@@ -74,6 +74,16 @@ Skills 是模块化的能力包，通过结构化的 Markdown 文件（`SKILL.md
 | [backnotprop/pstack](https://github.com/backnotprop/pstack) | poteto-mode | poteto 的代理风格：简洁详细的回应、克制的子代理、反套话、简单代码、验证工作 |
 | [dietrichgebert/ponytail](https://github.com/dietrichgebert/ponytail) | ponytail | 懒加载的高级开发者模式：用最少的改动完整解决问题，回复让忙碌的人一眼看懂（支持 lite / full / ultra 级别） |
 | [morluto/rea](https://github.com/morluto/rea) | reverse-engineer-anything | 使用 REA 对原生、托管、Electron/JavaScript、打包、固件和浏览器目标进行逆向工程 |
+
+### 5. 自建 Skill（本仓库）
+
+在本仓库中自行编写、不从上游安装的 skill，因此不出现在 `.skill-lock.json` 中。
+
+| Skill | 描述 |
+|-------|------|
+| dsh-offline-plugins | 把已装好的 dsh 插件搬到内网或断网机器安装：迁移 profile 下的 npm 包与清单，并附带 Windows 一键安装脚本 |
+| loop-me | 用 `/grilling` 的追问纪律，围绕用户生活中的「循环」反复打磨可实现的 workflow 规格（`workflows/*.md`） |
+| show-me | 用精炼的图、代码骨架和聚焦的 HTML 片段，把当前话题可视化地讲清楚 |
 
 ---
 
