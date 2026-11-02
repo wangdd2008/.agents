@@ -72,13 +72,8 @@ Skills 是模块化的能力包，通过结构化的 Markdown 文件（`SKILL.md
 | [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) | i-have-adhd | 为 ADHD 读者调整输出格式：先行动、编号步骤、重述状态、抑制旁支、给出具体时间估计 |
 | [jackwener/opencli](https://github.com/jackwener/opencli) | opencli-adapter-author | 基于观察到的网站行为构建或改进 OpenCLI JS 适配器 |
 | [backnotprop/pstack](https://github.com/backnotprop/pstack) | poteto-mode | poteto 的代理风格：简洁详细的回应、克制的子代理、反套话、简单代码、验证工作 |
-
-### 5. 内置 / 本地 Skill
-
-| Skill | 描述 |
-|-------|------|
-| ponytail | 懒加载的高级开发者模式：用最少的改动完整解决问题，回复让忙碌的人一眼看懂（支持 lite / full / ultra 级别） |
-| reverse-engineer-anything | 使用 REA 对原生、托管、Electron/JavaScript、打包、固件和浏览器目标进行逆向工程 |
+| [dietrichgebert/ponytail](https://github.com/dietrichgebert/ponytail) | ponytail | 懒加载的高级开发者模式：用最少的改动完整解决问题，回复让忙碌的人一眼看懂（支持 lite / full / ultra 级别） |
+| [morluto/rea](https://github.com/morluto/rea) | reverse-engineer-anything | 使用 REA 对原生、托管、Electron/JavaScript、打包、固件和浏览器目标进行逆向工程 |
 
 ---
 
