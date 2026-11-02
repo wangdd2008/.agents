@@ -405,6 +405,24 @@
       "skillFolderHash": "1b2ff0693423568ec77669ccb66c7e07363ae3aabef1ff73987490f257d4d46b",
       "installedAt": "2026-10-31T11:40:19.086Z",
       "updatedAt": "2026-10-31T11:40:19.086Z"
+    },
+    "ppt-master": {
+      "source": "hugohe3/ppt-master",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/hugohe3/ppt-master.git",
+      "skillPath": "skills/ppt-master/SKILL.md",
+      "skillFolderHash": "87a5820ef096b42aa4b2842042ab1a3c29423220",
+      "installedAt": "2026-11-02T01:22:49.756Z",
+      "updatedAt": "2026-11-02T01:22:49.756Z"
+    },
+    "i-have-adhd": {
+      "source": "ayghri/i-have-adhd",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/ayghri/i-have-adhd.git",
+      "skillPath": "skills/i-have-adhd/SKILL.md",
+      "skillFolderHash": "759f1e56d0d2fdd3819d2a53b81e72767c08d914",
+      "installedAt": "2026-11-02T02:00:14.628Z",
+      "updatedAt": "2026-11-02T02:00:14.628Z"
     }
   },
   "dismissed": {
