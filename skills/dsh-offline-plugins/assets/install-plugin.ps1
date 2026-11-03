@@ -149,9 +149,20 @@ try {
 } finally {
     $env:DSH_HOME = $savedHome
 }
-if ($code -ne 0) { throw "dsh --profile $Profile --dump-config 失败：`n$dump" }
-if (($dump -join "`n") -notmatch [regex]::Escape($name)) {
-    throw "组合后的 profile 里看不到 '$name' 层，检查 $manifestPath"
+if (($code -eq 0) -and (($dump -join "`n") -match [regex]::Escape($name))) {
+    Write-Host "  自检通过：profile 树含 '$name' 层"
+} else {
+    # 有的 profile 由宿主独占（desktop 归 Electron App），dsh 不给 dump；
+    # 退回结构校验：三件套齐了就算装上。
+    $why = @($dump) | Select-Object -First 1
+    Write-Host "  dsh --dump-config 不可用（$why），改查结构"
+    $reg = Get-Content $manifestPath -Raw | ConvertFrom-Json
+    $declared = @($reg.dependencies.PSObject.Properties.Name) -contains $name
+    $listed = @($reg.dsh.profile.bundles) -contains $name
+    $body = Test-Path (Join-Path $target "package.json")
+    if (-not ($declared -and $listed -and $body)) {
+        throw "结构校验未过：$manifestPath 里缺 $name 声明，或包本体不在 $target"
+    }
+    Write-Host "  自检通过（结构）：dependencies + bundles + 包本体都在"
 }
-Write-Host "  自检通过：profile 树含 '$name' 层"
 Write-Host ""

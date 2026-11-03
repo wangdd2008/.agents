@@ -7,7 +7,7 @@ set "RC=0"
 for /d %%D in ("%~dp0plugin\*") do (
   if exist "%%~fD\package.json" (
     echo.
-    call "%~dp0install.cmd" -Payload "%%~fD"
+    call "%~dp0install.cmd" -Payload "%%~fD" %*
     if errorlevel 1 set "RC=1"
   ) else (
     echo skip %%~nxD ^(no package.json^)
